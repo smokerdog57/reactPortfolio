@@ -1,0 +1,87 @@
+### Design Flow
+
+```md
+1. Run npm start or npm run dev:
+	- Open your terminal and run the command to start the development server. This could be npm start or npm run dev, depending on your project configuration.
+2. Vite Initialization:
+	- Vite initializes the development environment, sets up the project, and starts the local development server.
+3. Load main.jsx or main.js:
+	- Vite looks for the entry point specified in your configuration (likely main.jsx or main.js). This file is the starting point of your React application.
+4. Import React and ReactDOM:
+The main.jsx file imports the necessary React and ReactDOM modules.
+	- jsx code:
+		import React from 'react'
+		import ReactDOM from 'react-dom/client'
+5. Import App Component and Global Styles:
+	- The main.jsx file imports your main App component and any global styles.
+	jsx code:
+		import App from './App.jsx'
+		import './index.css'
+6. Render the App Component:
+
+	- Using ReactDOM.createRoot, the App component is rendered into the HTML element with the ID of 'root'.
+	jsx code:
+	ReactDOM.createRoot(document.getElementById('root')).render(
+  		<React.StrictMode>
+    		<App />
+  		</React.StrictMode>,
+	)
+	-React.StrictMode is used to enable strict mode, which helps catch common mistakes and potential 	problems in your application during development.
+7. Initialize React Application:
+	- React initializes the application, and the App component starts rendering.
+8. App Component Structure:
+	-The App component likely includes the overall structure of your application, such as the header, navigation, and footer.
+9. Header, Navigation, and Footer Components:
+	These components are likely present in the App component and are responsible for displaying the header, navigation links, and footer.
+10. Routing (if applicable):
+	- If you have set up routing (e.g., using react-router-dom), the appropriate page component is rendered based on the current route.
+11. Page-Specific Components:
+	- Components like AboutMe, Portfolio, Contact, and Resume are rendered based on the routing logic or the structure of your App component.
+12. Project Component (if applicable):
+	- If you have a common structure for displaying projects, the Project component is rendered for each project.
+13. Styling Applied:
+	- Styles from CSS files or styles-in-JS solutions are applied to the components, contributing to the visual appearance of the site.
+14. Assets Loaded:
+	- Images and other static assets from the assets folder are loaded and displayed as needed.
+15. Development Server Interaction:
+	- The development server interacts with the browser, automatically refreshing the page when changes are made in your code.
+16. Browser Displays Rendered Site:
+	- After the development server has processed your code, the browser displays the rendered site at the specified local URL (e.g., http://localhost:3000).
+
+## Tests                 
+
+TEST001: VERIFY APP.JS. At the CLI: npm start.  Verify that the App component renders without errors.
+How to Test: Run the application (npm start) and check the console for any error messages. Ensure the application loads successfully.
+STATUS: PASSED.
+
+TEST002: HELLO WORLD: Verify that "HELLO WORLD" is displayed on the page. 
+How to Test: Add HELLO WORLD to App.jsx. Run the application and check if HELLO WORLD is displayed on the page.
+STATUS: PASSED. 
+
+TEST003: HEADER COMPONENT (Header.jsx): Verify that the Header component renders HELLO WORLD. 
+How to Test: Create /src/components/Header.jsx and import into App.jsx. Run the application and check if the name is displayed in the header.
+STATUS: FAILED. header is not displayed and does not show up in the browser elements DOM. 
+
+TEST003: NAVIGATION  COMPONENT (Navigation.js): Verify that navigation links (About Me, Portfolio, Contact, Resume) are rendered.
+How to Test: Temporarily hardcode the navigation links in the Navigation component. Check if all links are displayed in the header.
+STATUS: NOT RUN.
+
+TEST004: FOOTER COMPONENT (Footer.js): Verify that the Footer component renders without errors.
+How to Test: Add a simple message (e.g., "Copyright © 2023") to the Footer component. Run the application and check if the message is displayed at the bottom.
+STATUS: NOT RUN.
+
+TEST005: Page-Specific Components (AboutMe.js, Portfolio.js, Contact.js, Resume.js): Verify that each page component renders without errors.
+How to Test: Temporarily add a unique message or content to each page component. Run the application and navigate to each page to ensure the content is displayed.
+STATUS: NOT RUN.
+
+TEST006: Project Component (Project.js): Verify that the Project component renders project details.
+How to Test: Add temporary project details (e.g., project name, description) to the Project component. Run the application and check if the details are displayed.
+STATUS: NOT RUN.
+
+TEST007: Styling (CSS files): Verify that styling is applied correctly to each component.
+How to Test: Experiment with styling changes in CSS files. Run the application and visually inspect each component to ensure the styling looks as expected.
+STATUS: NOT RUN.
+
+TEST008: Routing (if applicable): Verify that routing works as expected.
+How to Test: If using react-router-dom, add temporary routes in routes.js or a similar file. Run the application and navigate between different sections to ensure the correct components are rendered.
+STATUS: NOT RUN.
