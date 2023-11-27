@@ -70,7 +70,15 @@ STATUS: PASSED
 
 TEST005: HEADER COMPONENT STYLING. Verify that header component occupies the top 25% of the page and the h1 and links are displayed in white text against an attractive background. The links should be on same line as the H1 tag and the links should be displayed horizontally on the same line with space between them.
 How to Test: update styling and verify.
+STATUS: PASSED.
+
+TEST006: MAIN & FOOTER COMPONENT CREATION. Verify that page DOM has a header, main and footer components. The header remains unchanged and is at the top of the page. The main is directly underneath the header and the footer is directly underneath the main.
+How to Test: update components and run npm start to verify.
 STATUS: NOT RUN.
+
+
+
+
 
 TEST004: FOOTER COMPONENT (Footer.js): Verify that the Footer component renders without errors.
 How to Test: Add a simple message (e.g., "Copyright © 2023") to the Footer component. Run the application and check if the message is displayed at the bottom.
