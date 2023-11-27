@@ -27,17 +27,17 @@
   }
 
   /* Set the nav container properties for the header */
-  header ul {
+  header nav {
     display: flex;
     padding-top: 10px;
-    padding-left: 625px;
-    min-width: 300px;
+    padding-left: 400px;
+    min-width: 700px;
   }
   
   /* Set the nav links font color, font size, spacing and alignment properties for the header */
   header nav a {
     color: #13293d;
-    padding-left: 15px;
+    padding-right: 50px;
     text-align: center;
     color: #fff;
     white-space: nowrap;
