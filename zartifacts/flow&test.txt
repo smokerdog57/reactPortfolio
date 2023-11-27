@@ -5,19 +5,21 @@
 	- Open your terminal and run the command to start the development server. This could be npm start or npm run dev, depending on your project configuration.
 2. Vite Initialization:
 	- Vite initializes the development environment, sets up the project, and starts the local development server.
-3. Load main.jsx or main.js:
+3. Load index.html: The index.html file serves as the main HTML template for your React application. When you run the development server, it looks for this file to provide the basic structure of the web page.
+	- The <div id="root"></div> serves as the mount point for your React components, and the <script> tag loads the main JavaScript file (main.jsx).
+4. Vite looks for the entry point: main.jsx.
 	- Vite looks for the entry point specified in your configuration (likely main.jsx or main.js). This file is the starting point of your React application.
-4. Import React and ReactDOM:
+5. Import React and ReactDOM:
 The main.jsx file imports the necessary React and ReactDOM modules.
 	- jsx code:
 		import React from 'react'
 		import ReactDOM from 'react-dom/client'
-5. Import App Component and Global Styles:
+6. Import App Component and Global Styles:
 	- The main.jsx file imports your main App component and any global styles.
 	jsx code:
 		import App from './App.jsx'
 		import './index.css'
-6. Render the App Component:
+7. Render the App Component:
 
 	- Using ReactDOM.createRoot, the App component is rendered into the HTML element with the ID of 'root'.
 	jsx code:
@@ -27,25 +29,25 @@ The main.jsx file imports the necessary React and ReactDOM modules.
   		</React.StrictMode>,
 	)
 	-React.StrictMode is used to enable strict mode, which helps catch common mistakes and potential 	problems in your application during development.
-7. Initialize React Application:
+8. Initialize React Application:
 	- React initializes the application, and the App component starts rendering.
-8. App Component Structure:
+9. App Component Structure:
 	-The App component likely includes the overall structure of your application, such as the header, navigation, and footer.
-9. Header, Navigation, and Footer Components:
+10. Header, Navigation, and Footer Components:
 	These components are likely present in the App component and are responsible for displaying the header, navigation links, and footer.
-10. Routing (if applicable):
+11. Routing (if applicable):
 	- If you have set up routing (e.g., using react-router-dom), the appropriate page component is rendered based on the current route.
-11. Page-Specific Components:
+12. Page-Specific Components:
 	- Components like AboutMe, Portfolio, Contact, and Resume are rendered based on the routing logic or the structure of your App component.
-12. Project Component (if applicable):
+13. Project Component (if applicable):
 	- If you have a common structure for displaying projects, the Project component is rendered for each project.
-13. Styling Applied:
+14. Styling Applied:
 	- Styles from CSS files or styles-in-JS solutions are applied to the components, contributing to the visual appearance of the site.
-14. Assets Loaded:
+15. Assets Loaded:
 	- Images and other static assets from the assets folder are loaded and displayed as needed.
-15. Development Server Interaction:
+16. Development Server Interaction:
 	- The development server interacts with the browser, automatically refreshing the page when changes are made in your code.
-16. Browser Displays Rendered Site:
+17. Browser Displays Rendered Site:
 	- After the development server has processed your code, the browser displays the rendered site at the specified local URL (e.g., http://localhost:3000).
 
 ## Tests                 
@@ -60,10 +62,14 @@ STATUS: PASSED.
 
 TEST003: HEADER COMPONENT (Header.jsx): Verify that the Header component renders HELLO WORLD. 
 How to Test: Create /src/components/Header.jsx and import into App.jsx. Run the application and check if the name is displayed in the header.
-STATUS: FAILED. header is not displayed and does not show up in the browser elements DOM. 
+STATUS: PASSED. 
 
-TEST003: NAVIGATION  COMPONENT (Navigation.js): Verify that navigation links (About Me, Portfolio, Contact, Resume) are rendered.
-How to Test: Temporarily hardcode the navigation links in the Navigation component. Check if all links are displayed in the header.
+TEST004: HEADER COMPONENT NAV Links: Verify that navigation links (About Me, Portfolio, Contact, Resume) are rendered.
+How to Test: Add the navigation links in the Header.jsx component using list items and anchor tags. Check if all links are displayed in the header.
+STATUS: PASSED
+
+TEST005: HEADER COMPONENT STYLING. Verify that header component occupies the top 25% of the page and the h1 and links are displayed in white text against an attractive background. The links should be on same line as the H1 tag and the links should be displayed horizontally on the same line with space between them.
+How to Test: update styling and verify.
 STATUS: NOT RUN.
 
 TEST004: FOOTER COMPONENT (Footer.js): Verify that the Footer component renders without errors.
