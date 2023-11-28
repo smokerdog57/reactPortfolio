@@ -4,7 +4,7 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header';
-import Main from './components/Main';
+import Project from './components/Project';
 import Footer from './components/Footer'
 function App() {
   const [count, setCount] = useState(0)
@@ -12,7 +12,7 @@ function App() {
   return (
     <>
       <Header />
-      <Main />
+      <Project />
       <Footer />      
     </>
   )
