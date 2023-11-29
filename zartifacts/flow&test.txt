@@ -1,54 +1,33 @@
-### Design Flow
+Dev Plan
+1. Setup Routing: Use react-router-dom to set up routing for different sections (About Me, Portfolio, Contact, Resume).
+Implement route components for each section.
 
-```md
-1. Run npm start or npm run dev:
-	- Open your terminal and run the command to start the development server. This could be npm start or npm run dev, depending on your project configuration.
-2. Vite Initialization:
-	- Vite initializes the development environment, sets up the project, and starts the local development server.
-3. Load index.html: The index.html file serves as the main HTML template for your React application. When you run the development server, it looks for this file to provide the basic structure of the web page.
-	- The <div id="root"></div> serves as the mount point for your React components, and the <script> tag loads the main JavaScript file (main.jsx).
-4. Vite looks for the entry point: main.jsx.
-	- Vite looks for the entry point specified in your configuration (likely main.jsx or main.js). This file is the starting point of your React application.
-5. Import React and ReactDOM:
-The main.jsx file imports the necessary React and ReactDOM modules.
-	- jsx code:
-		import React from 'react'
-		import ReactDOM from 'react-dom/client'
-6. Import App Component and Global Styles:
-	- The main.jsx file imports your main App component and any global styles.
-	jsx code:
-		import App from './App.jsx'
-		import './index.css'
-7. Render the App Component:
+2. Navigation Component: Create a Navigation component with links to the different sections.
+Highlight the active link based on the current route.
 
-	- Using ReactDOM.createRoot, the App component is rendered into the HTML element with the ID of 'root'.
-	jsx code:
-	ReactDOM.createRoot(document.getElementById('root')).render(
-  		<React.StrictMode>
-    		<App />
-  		</React.StrictMode>,
-	)
-	-React.StrictMode is used to enable strict mode, which helps catch common mistakes and potential 	problems in your application during development.
-8. Initialize React Application:
-	- React initializes the application, and the App component starts rendering.
-9. App Component Structure:
-	-The App component likely includes the overall structure of your application, such as the header, navigation, and footer.
-10. Header, Navigation, and Footer Components:
-	These components are likely present in the App component and are responsible for displaying the header, navigation links, and footer.
-11. Routing (if applicable):
-	- If you have set up routing (e.g., using react-router-dom), the appropriate page component is rendered based on the current route.
-12. Page-Specific Components:
-	- Components like AboutMe, Portfolio, Contact, and Resume are rendered based on the routing logic or the structure of your App component.
-13. Project Component (if applicable):
-	- If you have a common structure for displaying projects, the Project component is rendered for each project.
-14. Styling Applied:
-	- Styles from CSS files or styles-in-JS solutions are applied to the components, contributing to the visual appearance of the site.
-15. Assets Loaded:
-	- Images and other static assets from the assets folder are loaded and displayed as needed.
-16. Development Server Interaction:
-	- The development server interacts with the browser, automatically refreshing the page when changes are made in your code.
-17. Browser Displays Rendered Site:
-	- After the development server has processed your code, the browser displays the rendered site at the specified local URL (e.g., http://localhost:3000).
+3. About Me Section: Create a component for the About Me section.
+Display a recent photo or avatar of the developer and a short bio.
+
+4. Portfolio Section: Create a component for the Portfolio section.
+Display titled images of the developer’s applications with links to both the deployed applications and GitHub repositories.
+
+5. Contact Section: Create a component for the Contact section.
+Implement a contact form with fields for name, email address, and a message.
+Add validation for required fields and email format.
+
+6. Resume Section: Create a component for the Resume section.
+Provide a link to a downloadable resume and list the developer’s proficiencies.
+
+7. Footer Component: Create a Footer component.
+Include text or icon links to the developer’s GitHub, LinkedIn, and a third platform (e.g., Stack Overflow, Twitter).
+
+8. Styling: Implement styles for the header, navigation, sections, and footer.
+Ensure a responsive and visually appealing design.
+
+9. Testing: Test each section's functionality and appearance.
+Ensure that navigation, form validation, and other features work as expected.
+
+
 
 ## Tests                 
 
@@ -109,3 +88,59 @@ STATUS: NOT RUN.
 TEST008: Routing (if applicable): Verify that routing works as expected.
 How to Test: If using react-router-dom, add temporary routes in routes.js or a similar file. Run the application and navigate between different sections to ensure the correct components are rendered.
 STATUS: NOT RUN.
+
+
+
+
+### Design Flow
+
+```md
+1. Run npm start or npm run dev:
+	- Open your terminal and run the command to start the development server. This could be npm start or npm run dev, depending on your project configuration.
+2. Vite Initialization:
+	- Vite initializes the development environment, sets up the project, and starts the local development server.
+3. Load index.html: The index.html file serves as the main HTML template for your React application. When you run the development server, it looks for this file to provide the basic structure of the web page.
+	- The <div id="root"></div> serves as the mount point for your React components, and the <script> tag loads the main JavaScript file (main.jsx).
+4. Vite looks for the entry point: main.jsx.
+	- Vite looks for the entry point specified in your configuration (likely main.jsx or main.js). This file is the starting point of your React application.
+5. Import React and ReactDOM:
+The main.jsx file imports the necessary React and ReactDOM modules.
+	- jsx code:
+		import React from 'react'
+		import ReactDOM from 'react-dom/client'
+6. Import App Component and Global Styles:
+	- The main.jsx file imports your main App component and any global styles.
+	jsx code:
+		import App from './App.jsx'
+		import './index.css'
+7. Render the App Component:
+
+	- Using ReactDOM.createRoot, the App component is rendered into the HTML element with the ID of 'root'.
+	jsx code:
+	ReactDOM.createRoot(document.getElementById('root')).render(
+  		<React.StrictMode>
+    		<App />
+  		</React.StrictMode>,
+	)
+	-React.StrictMode is used to enable strict mode, which helps catch common mistakes and potential 	problems in your application during development.
+8. Initialize React Application:
+	- React initializes the application, and the App component starts rendering.
+9. App Component Structure:
+	-The App component likely includes the overall structure of your application, such as the header, navigation, and footer.
+10. Header, Navigation, and Footer Components:
+	These components are likely present in the App component and are responsible for displaying the header, navigation links, and footer.
+11. Routing (if applicable):
+	- If you have set up routing (e.g., using react-router-dom), the appropriate page component is rendered based on the current route.
+12. Page-Specific Components:
+	- Components like AboutMe, Portfolio, Contact, and Resume are rendered based on the routing logic or the structure of your App component.
+13. Project Component (if applicable):
+	- If you have a common structure for displaying projects, the Project component is rendered for each project.
+14. Styling Applied:
+	- Styles from CSS files or styles-in-JS solutions are applied to the components, contributing to the visual appearance of the site.
+15. Assets Loaded:
+	- Images and other static assets from the assets folder are loaded and displayed as needed.
+16. Development Server Interaction:
+	- The development server interacts with the browser, automatically refreshing the page when changes are made in your code.
+17. Browser Displays Rendered Site:
+	- After the development server has processed your code, the browser displays the rendered site at the specified local URL (e.g., http://localhost:3000).
+

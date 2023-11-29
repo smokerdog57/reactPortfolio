@@ -2,12 +2,22 @@
 
 // import dependencies
 import React from 'react';
+import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer>
-     <h2>Made with ❤️️ by Tom Fusco</h2>
-        <p>&copy; 2023 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.</p>
+     <p>
+          <a href="mailto:smokerdog57@gmail.com">
+            <FaEnvelope size={30} />
+          </a>
+          <a href="https://github.com/smokerdog57/reactPortfolio" target="_blank" rel="noopener noreferrer">
+            <FaGithub size={30} />
+          </a>
+          <a href="https://linkedin.com/in/tom-fusco/" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin size={30} />
+          </a>
+        </p>
     </footer>
   );
 }
