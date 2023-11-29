@@ -1,5 +1,6 @@
 // /src/components/AboutMe.jsx
 
+// import dependencies
 import React from 'react';
 
 const AboutMe = () => {
