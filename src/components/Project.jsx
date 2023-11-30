@@ -2,22 +2,25 @@
 
 // import dependencies
 import React from 'react';
+import '../styles/project.css';
 
 // reusable project component
 const Project = ({ title, imageSrc, deployedLink, githubLink }) => {
   return (
-    <div id = "work" className = "section_topic">
-      <h2>Portfolio</h2>
-      <div className="card">
-        <h3>{title}</h3>
-        <img src={imageSrc} alt={`Screenshot of ${title}`} />
-        <div>
-          <a href={deployedLink} target="_blank" rel="noopener noreferrer">
-            Deployed App
-          </a>
-          <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            GitHub Repository
-          </a>
+    <div className = "card_container">
+      <div className="project">
+        <div className="project-info">
+          <img src={imageSrc} alt={`Screenshot of ${title}`} className="project-image" />
+          <div className="project-overlay">
+            <a href={deployedLink} target="_blank" rel="noopener noreferrer" className="project-title">
+              {title}
+            </a>
+            <div className="project-links">
+              <a href={githubLink} target="_blank" rel="noopener noreferrer">
+                <span className="link-text">GitHub Repository</span>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

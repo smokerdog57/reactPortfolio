@@ -3,6 +3,7 @@
 // import dependencies
 import React from 'react';
 import { FaGithub, FaLinkedin, FaEnvelope, FaPhone } from 'react-icons/fa';
+import '../styles/footer.css'
 
 const Footer = () => {
   return (

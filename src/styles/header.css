@@ -1,0 +1,38 @@
+/* /src/styles/header.css */
+
+/* Set header properties: flex, padding, background color and font color */
+header {
+    display: flex;
+    padding: 15px 50px 15px 15px;
+    background: #352e41;
+    color: #fff;
+  }
+  
+  /* Set my picture property to size to 10% */
+  header img.tom {
+    width: 10%;
+  }
+  
+  /* Set my h1 for the header */
+  header h1 {
+    font-size: 200%;
+    padding-left: 15px;
+  }
+  
+  /* Set the nav container properties for the header */
+  header nav {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 400px;
+    min-width: 700px;
+  }
+  
+  /* Set the nav links font color, font size, spacing and alignment properties for the header */
+  header nav a {
+    color: #13293d;
+    padding-right: 50px;
+    text-align: center;
+    color: #fff;
+    white-space: nowrap;
+    font-size:medium;
+  }

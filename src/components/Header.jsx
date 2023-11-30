@@ -3,6 +3,7 @@
 // import dependencies
 import React from 'react';
 import Navigation from './Navigation';
+import '../styles/header.css'
 
 const Header = () => {
   return (

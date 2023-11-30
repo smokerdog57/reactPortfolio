@@ -1,0 +1,28 @@
+/* flexboxcomponent.css */
+
+.flexbox-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 100px;
+}
+
+header {
+  background-color: #3498db;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+.flexbox-body {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+} 
+
+.flex-image {
+  max-width: 300px; /* Adjust the max-width as needed */
+  height: auto;
+  border: 1px solid #27ae60;
+  margin: 10px; /* Add equal spacing around the image */
+}
