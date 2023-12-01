@@ -29,8 +29,9 @@ How to Test: launch dever server and verify that home page includes Heading/NAV,
 STATUS: PASSED.
 
 TEST008: PORTFOLIO Page-Specific Component: Verify that PORTFOLIO component renders without errors.
-How to Test: 8.1 Test with dummy content.  Run the application and navigate to page to ensure the dummy content is displayed. (PASSED).
-How to Test: 8.2 Test with actual content.  Run the application and navigate to page to ensure the actual content is displayed. (NOT RUN).
+How to Test: 8.1 Test with dummy content.  Run the application and navigate to page to ensure the dummy content is displayed. 
+STATUS: FAILED. Content is displayed vertically instead of horizontally.
+How to Test: 8.2 Test with actual content.  Run the application and navigate to page to ensure the actual content is displayed. FAILED. Content is displayed vertically instead of horizontally.
 STATUS: IN PROGRESS.
 
 TEST009: CONTACT Page-Specific Component: Verify that page component renders without errors. **Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
