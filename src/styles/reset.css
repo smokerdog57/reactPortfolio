@@ -1,0 +1,54 @@
+/* /src/reset.css  v0.95 */
+
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Remove default margin */
+  body, h1, h2, h3, p, figure, blockquote, dl, dd {
+    margin: 0;
+  }
+  
+  /* Remove list styles on ul, ol elements */
+  ul, ol {
+    padding: 0;
+    list-style: none;
+  }
+  
+  /* Set core root defaults */
+  html:focus-within {
+    scroll-behavior: smooth;
+  }
+  
+  /* Reset native anchor styles */
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* A better looking default horizontal rule */
+  hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  
+  /* Reset common form defaults */
+  button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+  }
+  
+  /* Remove all animations and transitions for people that prefer not to see them */
+  @media (prefers-reduced-motion: reduce) {
+    * {
+      animation-play-state: paused !important;
+      transition: none !important;
+    }
+  }  
