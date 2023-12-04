@@ -6,6 +6,7 @@
 }
 
 .project-card-flex-container {
+    flex: initial;
     display: flex;
     justify-content: space-between;
     position: relative;
