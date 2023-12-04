@@ -1,12 +1,12 @@
-/* /src/styles/contact.css v0.94 */
+/* /src/styles/contact.css v0.98 */
 
 .contact-container {
-    margin: 20px;
+    margin-left: 100px;
   }
   
   .contact-form {
     width: 40%;
-    margin: 0 auto;
+    margin: 0;
   }
   
   .form-group {
@@ -26,7 +26,7 @@
   }
   
   .submit-button {
-    background-color: #4caf50;
+    background-color: lightgray;
     color: #fff;
     padding: 10px 20px;
     border: none;

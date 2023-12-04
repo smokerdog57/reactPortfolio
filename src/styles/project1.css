@@ -1,6 +1,7 @@
-/* /src/styles/project.css v0.97*/
+/* /src/styles/project.css v0.98*/
 
 .portfolio-outer-container {
+    display: inline-block;
     margin-left:100px;
 }
 
@@ -10,10 +11,8 @@
     margin-left: 10px;
    }
 
-.project-card-flex-container {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
+.project-card-container {
+    display: inline-block;
     position: relative;
     overflow: hidden;
 }
@@ -28,7 +27,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    /* width: 100%; */
     width: calc(100% / 3 - 10px);
     height: 100%;
     background: rgba(0, 0, 0, 0.7);
