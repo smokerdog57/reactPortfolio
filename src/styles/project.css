@@ -1,9 +1,14 @@
-/* /src/styles/project.css v0.93*/
+/* /src/styles/project.css v0.97*/
+
+.portfolio-outer-container {
+    margin-left:100px;
+}
 
 .project-outer-container {
     width:100%;
     margin-bottom: 10px;
-}
+    margin-left: 10px;
+   }
 
 .project-card-flex-container {
     flex: initial;

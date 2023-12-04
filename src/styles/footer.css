@@ -4,5 +4,17 @@ footer {
     clear: both;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-align: center;
-    }
-    
+}
+
+.icon-link {
+    margin: 0 10px;
+}
+
+.icon-link svg {
+    color: lightgray; /* Set your desired color */
+  }
+
+  /* Change the color of the icons on hover */
+.icon-link:hover svg {
+    color: white; /* Set the color you want on hover */
+  }

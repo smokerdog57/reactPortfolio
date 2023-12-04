@@ -1,0 +1,17 @@
+/* /src/styles/aboutme.css */
+
+div.aboutMeDiv {
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+/* Set my picture property to size to 10% */
+img.tom {
+    width: 10%;
+    padding-top: 20px;
+}
+
+p.aboutMeP {
+    padding-top: 20px;
+    padding-right: 100px;
+}

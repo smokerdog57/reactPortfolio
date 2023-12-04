@@ -1,4 +1,10 @@
-/* /src/reset.css  v0.95 */
+/* /src/styles/reset.css  v0.96 */
+
+/* Reset margin and padding on body and html */
+body, html {
+  margin: 0;
+  padding: 0;
+}
 
 /* Box sizing rules */
 html {
@@ -10,7 +16,7 @@ html {
   }
   
   /* Remove default margin */
-  body, h1, h2, h3, p, figure, blockquote, dl, dd {
+  body, header, h1, h2, h3, p, figure, blockquote, dl, dd {
     margin: 0;
   }
   

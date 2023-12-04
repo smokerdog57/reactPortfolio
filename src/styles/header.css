@@ -1,38 +1,50 @@
-/* /src/styles/header.css */
+/* /src/styles/header.css v0.97 */
 
 /* Set header properties: flex, padding, background color and font color */
 header {
-    display: flex;
-    padding: 15px 50px 15px 15px;
-    background: #352e41;
-    color: #fff;
-  }
-  
-  /* Set my picture property to size to 10% */
-  header img.tom {
-    width: 10%;
-  }
-  
-  /* Set my h1 for the header */
-  header h1 {
-    font-size: 200%;
-    padding-left: 15px;
-  }
-  
-  /* Set the nav container properties for the header */
-  header nav {
-    display: flex;
-    padding-top: 10px;
-    padding-left: 400px;
-    min-width: 700px;
-  }
-  
-  /* Set the nav links font color, font size, spacing and alignment properties for the header */
-  header nav a {
-    color: #13293d;
-    padding-right: 50px;
-    text-align: center;
-    color: #fff;
-    white-space: nowrap;
-    font-size:medium;
-  }
+  display: flex;
+  padding: 50px 50px 50px 50px;
+  background: linear-gradient(-45deg, #ccc 5%, #fff 10%, #fff 15%, #ccc 15%, #ccc 25%, #fff 30%, #fff 35%, #ccc 35%, #ccc 45%, #fff 50%, #fff 55%, #ccc 55%, #ccc 65%, #fff 70%, #fff 75%, #ccc 75%, #ccc 85%, #fff 90%, #fff 95%, #ccc 95%);
+  background-blend-mode: overlay;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Set my h1 for the header */
+header h1 {
+  font-size: 300%;
+  padding-left: 15px;
+  font-family: 'Garamond', serif; /* Apply the Garamond font */
+  padding-left: 15px;
+}
+
+/* Set the nav container properties for the header */
+header nav {
+  display: flex;
+  padding-top: 10px;
+  padding-left: 200px;
+  min-width: 700px;
+}
+
+/* Set the nav links font color, font size, spacing and alignment properties for the header */
+header nav a {
+  padding-right: 50px;
+  text-align: center;
+  font-family: 'Garamond', serif; /* Apply the Garamond font */
+  color: #fff;
+  white-space: nowrap;
+  font-size: 2.0em;
+  transition: color 0.3s;
+ }
+
+/* Hover state */
+header nav a:hover {
+  color: #666; /* Darker shade of grey on hover */
+}
+
+/* Active/Clicked state */
+header nav a:active,
+header nav a.active,
+header nav a:focus {
+  color: #120e0e; /* Even darker shade of grey after clicking or when focused */
+}

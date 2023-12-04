@@ -2,7 +2,7 @@
 
 // import dependencies
 import React from 'react';
-import {FaGithub} from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 import '../styles/project.css';
 
 // reusable project component
@@ -17,7 +17,7 @@ const Project = ({ title, imageSrc, deployedLink, githubLink }) => {
           </a>
           <div className="project-links">
             <a href={githubLink} target="_blank" rel="noopener noreferrer">
-            <FaGithub className="link-icon" />
+              <FaGithub className="link-icon" />
             </a>
           </div>
         </div>

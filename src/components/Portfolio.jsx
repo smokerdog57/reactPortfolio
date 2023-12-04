@@ -1,4 +1,4 @@
-// /src/components/Portfolio.jsx v0.92
+// /src/components/Portfolio.jsx v0.97
 
 import React from 'react';
 import Project from './Project';
@@ -27,7 +27,8 @@ const Portfolio = () => {
   ];
 
   return (
-    <div>
+    <div className= "portfolio-outer-container">
+      <h2>Portfolio</h2>
       {projects.map((project, index) => (
         <Project key={index} {...project} />
       ))}
