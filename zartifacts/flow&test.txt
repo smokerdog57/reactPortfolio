@@ -24,7 +24,7 @@ TEST006: MAIN & FOOTER COMPONENT CREATION. Verify that page DOM has a header, ma
 How to Test: update components and run npm start to verify.
 STATUS: PASSED.	
 
-TEST007: HOME PAGE RENDERED:  home page renders without errors.
+TEST007: HOME PAGE WITH ABOUTME RENDERED:  home page renders without errors.
 How to Test: launch dever server and verify that home page includes Heading/NAV, About Me and Footer.
 STATUS: PASSED.
 
@@ -32,18 +32,17 @@ TEST008: PORTFOLIO Page-Specific Component: Verify that PORTFOLIO component rend
 How to Test: 8.1 Test with dummy content.  Run the application and navigate to page to ensure the dummy content is displayed. 
 STATUS: FAILED. Content is displayed vertically instead of horizontally.
 How to Test: 8.2 Test with actual content.  Run the application and navigate to page to ensure the actual content is displayed. FAILED. Content is displayed vertically instead of horizontally.
-STATUS: IN PROGRESS.
+STATUS: PASSED (partial).
 
 TEST009: CONTACT Page-Specific Component: Verify that page component renders without errors. **Note**: Because this application doesn’t include a back end or connect to an API, the contact form doesn't need to save this information right now. You'll add back-end functionality in the next few weeks. In the meantime, consider including your email address and phone number on the Contact page.
 How to Test: Temporarily add a unique message or content to page component. Run the application and navigate to page to ensure the content is displayed.
-STATUS: NOT RUN.
+STATUS: PASSED.
 
 TEST010: RESUME Page-Specific Component: Verify that page component renders without errors.
 How to Test: Temporarily add a unique message or content to each page component. Run the application and navigate to page to ensure the content is displayed.
-STATUS: NOT RUN.
+STATUS: PASSED.
 
-TEST011: Styling (CSS files): Verify that styling is applied correctly to each component.
-How to Test: Experiment with styling changes in CSS files. Run the application and visually inspect each component to ensure the styling looks as expected.
+TEST011: Deploy to Netlify and test app.
 STATUS: NOT RUN.
 
 

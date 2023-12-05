@@ -1,0 +1,33 @@
+/* /src/styles/resume.css */
+
+div.resume-container {
+    margin-left: 100px;
+    padding-top: 20px;
+}
+
+h3 {
+    font-size: medium;
+}
+
+p.resume-link {
+    margin-bottom: 20px;
+}
+
+ul {
+    margin-left: 30px;
+    list-style: circle;
+}
+
+div.resume-container a {
+    color: grey;
+    /* Set your desired default color */
+    text-decoration: none;
+    /* Remove underline, if you want */
+    transition: color 0.3s ease;
+    /* Add a smooth transition effect */
+}
+
+div.resume-container a:hover {
+    color: white;
+    /* Set your desired hover color */
+}

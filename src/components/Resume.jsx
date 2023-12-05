@@ -2,20 +2,20 @@
 
 // import dependencies
 import React from 'react';
+import "../styles/resume.css";
 
 const Resume = () => {
   return (
-    <div>
+    <div className = "resume-container">
       <h2>Resume</h2>
-      <p>
+      <p className="resume-link">
         Download my resume{' '}
         <a href="https://drive.google.com/file/d/13n6R8ohVvVPByTsxdBnaa9oIUvmZfSIR/view?usp=sharing" download>
           here
         </a>
-        .
       </p>
 
-      <h3>front-end proficiencies</h3>
+      <h3>Front-end Proficiencies</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>
@@ -26,7 +26,7 @@ const Resume = () => {
         <li>Bootstrap</li>
       </ul>
 
-      <h3>back-end proficiencies</h3>
+      <h3>Back-end Proficiencies</h3>
       <ul>
         <li>APIs</li>
         <li>Graphql</li>
